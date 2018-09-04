@@ -56,7 +56,7 @@ int main()
 					if (rows[r].x[col] == value)
 					{
 						currTotal++;
-						if (rows[r].y == classNumber) currMatch++;
+						if (rows[r].y != classNumber) currMatch++;
 					}
 				}
 
