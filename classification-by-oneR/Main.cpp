@@ -33,6 +33,8 @@ void loadRows()
 		}
 		inp >> nextRow.y;
 
+		nextRow.y--;// Count from zero.
+
 		rows.push_back(nextRow);
 	}
 
@@ -82,8 +84,8 @@ int main()
 
 	for (int i = 0; i < 3; i++)
 	{
-		cout << i << " " 
-			<< rules[i].i << " " 
+		cout << i + 1 << " " 
+			<< rules[i].i + 1 << " " 
 			<< rules[i].value << " " 
 			<< rules[i].match << "/" << rules[i].total << endl;
 	}
